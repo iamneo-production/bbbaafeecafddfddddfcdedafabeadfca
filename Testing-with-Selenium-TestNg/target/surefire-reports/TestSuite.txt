@@ -1,30 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 11.52 s <<< FAILURE! - in TestSuite
-ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2  Time elapsed: 3.408 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-unknown error: session deleted because of page crash
-from unknown error: cannot determine loading status
-from tab crashed
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.518 s <<< FAILURE! - in TestSuite
+ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2  Time elapsed: 8.012 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="item2d631428f2"]/div/div[2]/a/div"}
   (Session info: chrome=114.0.5735.133)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'bbbaafeecafddfddddfcdedafabeadfca-0', ip: '10.56.14.11', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [6ca3cab12b0eb6b71a4889acbfa4e7b4, clickElement {id=A7FD28FECDE10D734D6874A2A552DCAC_element_67}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.ekO34j}, goog:chromeOptions: {debuggerAddress: localhost:42779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.56.14.11:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.56.14.11:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.14.11:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[RemoteWebDriver: chrome on LINUX (6ca3cab12b0eb6b71a4889acbfa4e7b4)] -> xpath: //*[@id="gh-btn"]]
-Session ID: 6ca3cab12b0eb6b71a4889acbfa4e7b4
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2(AppTest.java:39)
-
-ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_3  Time elapsed: 0.094 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'bbbaafeecafddfddddfcdedafabeadfca-0', ip: '10.56.14.11', os.name: 'Linux', os.arch: 'amd64', os.version: '5.10.162+', java.version: '11.0.18'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [6ca3cab12b0eb6b71a4889acbfa4e7b4, findElement {using=xpath, value=//*[@id="item269e8867c5"]/div/div[2]/a/div}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.ekO34j}, goog:chromeOptions: {debuggerAddress: localhost:42779}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.56.14.11:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.56.14.11:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.14.11:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6ca3cab12b0eb6b71a4889acbfa4e7b4
-	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_3(AppTest.java:53)
+Command: [695e96f966f197ddba05e8b8405a38ff, findElement {using=xpath, value=//*[@id="item2d631428f2"]/div/div[2]/a/div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.133, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /tmp/.com.google.Chrome.sITmPm}, goog:chromeOptions: {debuggerAddress: localhost:44765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.56.14.11:4444/sessi..., se:cdpVersion: 114.0.5735.133, se:vnc: ws://10.56.14.11:4444/sessi..., se:vncEnabled: true, se:vncLocalAddress: ws://10.56.14.11:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 695e96f966f197ddba05e8b8405a38ff
+	at ai.iamneo.testing.Testing_Selenium_TestNg.AppTest.testcase_2(AppTest.java:40)
 

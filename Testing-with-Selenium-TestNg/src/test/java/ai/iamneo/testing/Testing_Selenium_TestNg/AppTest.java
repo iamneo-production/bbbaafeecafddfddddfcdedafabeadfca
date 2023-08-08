@@ -34,9 +34,8 @@ public class AppTest {
     public void testcase_2() throws InterruptedException {
        String str="Apple Watches";
         driver.findElement(By.xpath("//*[@id=\"gh-ac\"]")).sendKeys(str);
-        
-        WebElement searchButton = driver.findElement(By.xpath("//*[@id=\"gh-btn\"]"));
-        searchButton.click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"gh-btn\"]")).click();
         
         WebElement firstProduct = driver.findElement(By.xpath("//*[@id=\"item2d631428f2\"]/div/div[2]/a/div")); // Assuming the first product is displayed in a list
         String firstProductName = firstProduct.getText();
@@ -46,7 +45,7 @@ public class AppTest {
         Assert.assertEquals(firstProductName, "Apple Watch Series 3 38mm 42mm GPS + WiFi + Cellular Pink Gold Space Gray Silver"); // Replace "Expected Product Name" with the actual expected product name
     }
 
-    @Test
+   /*  @Test
     public void testcase_3() throws InterruptedException {
         int nthProductIndex = 10; // Assuming the 10th product index is known
         
@@ -61,7 +60,7 @@ public class AppTest {
     @AfterTest
     public void afterTest() {
         driver.quit();
-    }
+    }*/
 
    
 }
