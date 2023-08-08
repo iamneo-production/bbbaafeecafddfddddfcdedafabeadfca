@@ -37,12 +37,12 @@ public class AppTest {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//*[@id=\"gh-btn\"]")).click();
         
-        WebElement firstProduct = driver.findElement(By.xpath("//*[@id=\"item2d631428f2\"]/div/div[2]/a/div")); // Assuming the first product is displayed in a list
+        WebElement firstProduct = driver.findElement(By.xpath("//*[@id=\"item21b5b50e95\"]/div/div[2]/a/div")); // Assuming the first product is displayed in a list
         String firstProductName = firstProduct.getText();
         
         System.out.println("First Product: " + firstProductName);
         
-        Assert.assertEquals(firstProductName, "Apple Watch Series 3 38mm 42mm GPS + WiFi + Cellular Pink Gold Space Gray Silver"); // Replace "Expected Product Name" with the actual expected product name
+        Assert.assertEquals(firstProductName, "Apple Watch Series 5 40mm/44mm GPS WiFi + LTE Cellular Sport Band USED Excellent"); // Replace "Expected Product Name" with the actual expected product name
     }
 
    /*  @Test
